@@ -6,7 +6,7 @@ const Home = () => {
         <>
             <header>
                 <NavBar />
-                <h1>hi ! this is my home page !</h1>
+                <h1 className="text-[20px] text-blue">hi ! this is my home page !</h1>
             </header>
         </>
     );
