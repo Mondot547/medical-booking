@@ -6,7 +6,12 @@ const reservationRoutes = require('../routes/reservationRoutes');
 const app = express();
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://Alex:alex@bienetre.6htgv7f.mongodb.net/?retryWrites=true&w=majority&appName=bienEtre', { useNewUrlParser: true, useUnifiedTopology: true })
+const uri = 'mongodb+srv://Alex:alex@bienetre.6htgv7f.mongodb.net/?retryWrites=true&w=majority&appName=bienEtre';
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+
   .then(() => {
     console.log('Connected to MongoDB');
   })
@@ -16,7 +21,7 @@ mongoose.connect('mongodb+srv://Alex:alex@bienetre.6htgv7f.mongodb.net/?retryWri
 
 app.use('/', reservationRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

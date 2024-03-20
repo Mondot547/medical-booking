@@ -2,6 +2,7 @@ import Home from "./views/Home";
 import './assets/styles/App.css';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Appointment from "./views/Appointment";
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/appointment" element={<Appointment />} />
       </Routes>
     </Router>
   )
