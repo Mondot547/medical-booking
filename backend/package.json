@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mondot547/medical-booking.git"
+  },
+  "author": "Mondot547",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mondot547/medical-booking/issues"
+  },
+  "homepage": "https://github.com/Mondot547/medical-booking#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.2"
+  }
+}
